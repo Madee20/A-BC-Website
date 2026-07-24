@@ -23,7 +23,6 @@ components/
   Header.tsx             # fixed nav with mobile menu
   Hero.tsx                # "From A to B to C" headline + WhatsApp CTA
   StageTrackerCard.tsx     # signature widget: A/B/C journey status, client component
-  Journey.tsx              # Setup / Operate / Scale timeline (the core section)
   WhyUs.tsx                  # differentiators (local expertise, bilingual, etc.)
   ContactBooking.tsx           # contact form + prominent WhatsApp CTA
   FloatingWhatsApp.tsx          # persistent WhatsApp button, bottom-right
@@ -33,18 +32,6 @@ tailwind.config.ts    # brand colors, fonts, ledger-line background pattern
 
 ## Things to replace before launch
 
-- **Brand name**: confirmed as "A&BC — Accelerators & Business Consultants." The real logo is
-  in `public/logo.png` and used in `Header.tsx` and `Footer.tsx` via `next/image`. If you get an
-  updated/higher-res version, just replace that file (keep the filename, or update the `src`
-  paths in both components).
-- **WhatsApp number**: currently `https://wa.me/966500000000` in `Hero.tsx`,
-  `ContactBooking.tsx`, `FloatingWhatsApp.tsx`, and `Footer.tsx`.
-- **Contact details**: email/phone/office cities in `ContactBooking.tsx` and `Footer.tsx`.
-- **Stats & case studies**: the numbers in `StatsBar.tsx` and the case snippets in
-  `Credentials.tsx` are illustrative placeholders — swap in your real figures and anonymized
-  outcomes.
-- **Licenses**: the list in `Credentials.tsx` (MISA / ZATCA / SOCPA / GAZT) should reflect your
-  actual registrations.
 - **Contact form**: `ContactBooking.tsx` posts to `/api/contact` (`app/api/contact/route.ts`),
   which sends the message via [Resend](https://resend.com). To activate it:
   1. Create a free Resend account and API key.
