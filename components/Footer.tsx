@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h5 className="mb-[1.125rem] text-xs font-medium uppercase tracking-wide text-cream">Contact</h5>
             <ul className="space-y-2.5">
-              <li><a href="https://wa.me/966538964549" className="hover:text-cream">WhatsApp</a></li>
+              <li><a href="https://wa.me/966533843562" className="hover:text-cream">WhatsApp</a></li>
               <li><a href="#contact" className="hover:text-cream">Book a consultation</a></li>
               <li>mazinwc@gmail.com</li>
             </ul>

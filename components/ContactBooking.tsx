@@ -70,7 +70,7 @@ export default function ContactBooking() {
             </p>
 
             <a
-              href="https://wa.me/966538964549"
+              href="https://wa.me/966533843562"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-3 bg-[#25D366] px-7 py-3.5 text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"

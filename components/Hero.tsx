@@ -27,7 +27,7 @@ export default function Hero() {
               Book a consultation
             </a>
             <a
-              href="https://wa.me/966538964549"
+              href="https://wa.me/966533843562"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 border border-cream/35 px-7 py-3.5 text-sm text-cream transition-colors hover:border-brass"
