@@ -8,11 +8,11 @@ export default function Footer() {
           <div>
             <a href="#" className="mb-5 inline-flex items-center">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="A&BC — Accelerators & Business Consultants"
                 width={573}
                 height={160}
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </a>
             <p className="max-w-[32ch] text-[0.88rem] text-slate">

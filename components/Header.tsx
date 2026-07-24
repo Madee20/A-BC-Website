@@ -19,12 +19,12 @@ export default function Header() {
       <div className="mx-auto flex h-[78px] max-w-[1240px] items-center justify-between px-6 sm:px-10">
         <a href="#" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="A&BC — Accelerators & Business Consultants"
             width={573}
             height={160}
             priority
-            className="h-11 w-auto"
+            className="h-12 w-auto"
           />
         </a>
 
