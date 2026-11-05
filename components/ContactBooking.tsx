@@ -28,7 +28,6 @@ export default function ContactBooking() {
       name: data.get("name"),
       company: data.get("company"),
       email: data.get("email"),
-      stage: data.get("stage"),
       message: data.get("message"),
       website: data.get("website"), // honeypot, left empty by real users
     };
@@ -62,7 +61,7 @@ export default function ContactBooking() {
           <div>
             <span className="font-mono text-xs uppercase tracking-widest2 text-brass">Get in touch</span>
             <h2 className="mt-4 max-w-[14ch] font-display text-navy text-[clamp(2rem,3.6vw,2.9rem)] font-medium">
-              Let&apos;s start your journey from A to C.
+              Let&apos;s start your journey from A...
             </h2>
             <p className="mt-5 max-w-[38ch] text-[#5b6472]">
               Message us directly on WhatsApp for the fastest response, or book a consultation
@@ -126,21 +125,7 @@ export default function ContactBooking() {
               />
             </label>
 
-            <label className="mt-5 block text-sm">
-              <span className="mb-2 block text-xs uppercase tracking-wide text-cream">Which stage are you at?</span>
-              <select
-                name="stage"
-                defaultValue=""
-                className="w-full border border-cream/20 bg-navy/80 px-3.5 py-3 text-sm text-cream outline-none focus:border-brass"
-              >
-                <option value="" disabled>
-                  Select a stage
-                </option>
-                <option value="setup">A — Setting up in KSA</option>
-                <option value="operate">B — Already operating, need support</option>
-                <option value="scale">C — Ready to scale or raise</option>
-              </select>
-            </label>
+           
 
             <label className="mt-5 block text-sm">
               <span className="mb-2 block text-xs uppercase tracking-wide text-cream">How can we help?</span>

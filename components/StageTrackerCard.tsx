@@ -3,9 +3,12 @@
 import { useEffect, useState } from "react";
 
 const STAGES = [
-  { letter: "A", label: "Setup", detail: "Entity formation, MISA licensing, CR registration, bank accounts" },
-  { letter: "B", label: "Operate", detail: "Accounting, Tax/ Zakat compliance, ZATCA, Payroll, GOSI" },
-  { letter: "C", label: "Scale", detail: "Financial advisory, Expansion strategy, Funding readiness" },
+  { letter: "1", label: "Initial Consultation", detail: "We understand your business, volumes and compliance position." },
+  { letter: "2", label: "Scope & Quote", detail: "A tailored scope and retainer matched to your size band." },
+  { letter: "3", label: "Engagement Letter", detail: "Clear terms, deliverables and timelines — signed off." },
+  { letter: "4", label: "Onboarding", detail: "Systems setup, data handover and process configuration." },
+  { letter: "5", label: "Ongoing Delivery", detail: "Strategic advisory, performance reviews and insights to drive growth." },
+
 ];
 
 export default function StageTrackerCard() {
@@ -17,8 +20,8 @@ export default function StageTrackerCard() {
   }, []);
 
   return (
-    <div className="border border-brass/30 bg-navy/55 p-7 pb-6">
-      <div className="mb-5 flex items-baseline justify-between border-b border-brass/20 pb-3.5">
+    <div className="border border-brass/30 bg-navy/55 p-7 pb-4">
+      <div className="mb-3 flex items-baseline justify-between border-b border-brass/20 pb-3">
         <span className="font-display text-base italic text-cream">Client journey</span>
         
       </div>
@@ -50,7 +53,7 @@ export default function StageTrackerCard() {
         ))}
       </div>
 
-      <div className="mt-5 flex items-center gap-2 text-xs text-slate">
+      <div className="mt-2 flex items-center gap-2 text-xs text-slate">
         <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_0_3px_rgba(52,211,153,0.18)]" />
         One team, one point of contact, start to finish.
       </div>

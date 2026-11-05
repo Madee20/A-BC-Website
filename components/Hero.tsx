@@ -1,8 +1,10 @@
 import StageTrackerCard from "./StageTrackerCard";
+import Typewriter from "./Typewriter";
+
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-ink to-navy pb-24 pt-[168px] text-cream">
+    <section className="relative overflow-hidden bg-gradient-to-b from-ink to-navy pb-8 pt-[108px] text-cream">
       <div className="absolute inset-0 bg-ledger-rules" />
 
       <div className="relative mx-auto grid max-w-[1240px] grid-cols-1 items-center gap-14 px-6 sm:px-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
@@ -10,14 +12,26 @@ export default function Hero() {
           <span className="font-mono text-xs uppercase tracking-widest2 text-brass">
             Setup &middot; Operate &middot; Scale
           </span>
-          <h1 className="mt-4 max-w-[16ch] font-display text-[clamp(2.4rem,4.4vw,3.9rem)] font-medium leading-[1.1] tracking-tight">
+          {/*<h1 className="mt-4 max-w-[16ch] font-display text-[clamp(2.4rem,4.4vw,3.9rem)] font-medium leading-[1.1] tracking-tight">
             From <span className="text-brass">A</span> to{" "}
-            <span className="text-brass">B</span> to{" "}
-            <span className="text-brass">C</span> — we&apos;re with you at every stage.
-          </h1>
+            <span className="text-brass">Z </span>
+             - we&apos;re with you at every stage.
+          </h1>*/}
+
+            <h1 className="mt-4 max-w-[16ch] font-display text-[clamp(2.4rem,4.4vw,3.9rem)] font-medium leading-[1.1] tracking-tight">
+  <Typewriter
+    segments={[
+      { text: "From " },
+      { text: "A", className: "text-brass" },
+      { text: " to " },
+      { text: "Z", className: "text-brass" },
+      { text: " - we're with you at every stage." },
+    ]}
+  />
+</h1>
+
           <p className="mt-6 mb-9 max-w-[46ch] text-lg text-cream/70">
-            From setup to scale, your most trusted, end-to-end strategic partner
-            in KSA.
+            Your one-stop, end-to-end strategic partner.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

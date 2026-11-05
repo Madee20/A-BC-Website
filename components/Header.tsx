@@ -4,10 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { href: "#services", label: "Our Services" },
-  { href: "#why-us", label: "Why A&BC" },
   { href: "#about", label: "About" },
-  { href: "#process", label: "How we work" },
+  { href: "#services", label: "Our Services" },
+  /* { href: "#why-us", label: "Why A&BC" }, */
+  /* { href: "#process", label: "How we work" }, */
   { href: "#contact", label: "Contact" },
 ];
 
