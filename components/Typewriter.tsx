@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 type Segment = { text: string; className?: string };
 
+export const TYPEWRITER_DONE_EVENT = "typewriter:done";
+
 export default function Typewriter({
   segments,
   speed = 55,
@@ -39,6 +41,21 @@ export default function Typewriter({
       clearInterval(interval);
     };
   }, [total, speed, startDelay]);
+
+  // Tell the rest of the page when typing has finished
+  useEffect(() => {
+    if (total > 0 && count >= total) {
+      (window as any).__typewriterDone = true;
+      window.dispatchEvent(new Event(TYPEWRITER_DONE_EVENT));
+    }
+  }, [count, total]);
+
+  // Reset the flag if this component unmounts (e.g. navigating away and back)
+  useEffect(() => {
+    return () => {
+      (window as any).__typewriterDone = false;
+    };
+  }, []);
 
   const render = (limit: number) => {
     let left = limit;
